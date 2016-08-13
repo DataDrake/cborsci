@@ -32,10 +32,10 @@ typedef enum {
     UINT        = 0x00, /* Type 0 */
     NINT        = 0x20, /* Type 1 */
     BYTE_STRING = 0x40, /* Type 2 */
-    TEST_STRING = 0x60, /* Type 3 */
+    TEXT_STRING = 0x60, /* Type 3 */
     ARRAY       = 0x80, /* Type 4 */
     MAP         = 0xA0, /* Type 5 */
-    TAP         = 0xC0, /* Type 6 */
+    TAG         = 0xC0, /* Type 6 */
     EXTENDED    = 0xE0  /* Type 7 */
 } CBORMajorType;
 
@@ -46,6 +46,7 @@ typedef enum {
 #define CBOR_MAJOR_LENGTH_MASK 0x1F
 
 typedef enum {
+    /* 0-23 Length in Bytes */
     BYTE1      = 0x18,
     BYTE2      = 0x19,
     BYTE4      = 0x1A,
@@ -77,7 +78,7 @@ typedef enum {
     CBOR_FALSE     = 20,
     CBOR_TRUE      = 21,
     CBOR_NULL      = 22,
-    CBOR_UNEDFINED = 23
+    CBOR_UNDEFINED = 23
     /* 24-31 Reserved */
     /* 32-225 Unassigned */
 } CBORSimpleValue;
