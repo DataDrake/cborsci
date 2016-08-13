@@ -61,15 +61,26 @@ typedef enum {
  */
 
 typedef enum {
-    SIMPLEBYTE   = 24,
-    FLOAT_HALF   = 25,
-    FLOAT_SINGLE = 26,
-    FLOAT_DOUBLE = 27,
-    UNASSIGNED28 = 28,
-    UNASSIGNED29 = 29,
-    UNASSIGNED30 = 30,
-    BREAK        = 0xFF
+    /* 0-23 Simple Value */
+    SIMPLE_VALUE_BYTE = 24,
+    FLOAT_HALF        = 25,
+    FLOAT_SINGLE      = 26,
+    FLOAT_DOUBLE      = 27,
+    UNASSIGNED28      = 28,
+    UNASSIGNED29      = 29,
+    UNASSIGNED30      = 30,
+    BREAK             = 0xFF
 } CBORExtendedType;
+
+typedef enum {
+    /* 0-19 Unassigned */
+    CBOR_FALSE     = 20,
+    CBOR_TRUE      = 21,
+    CBOR_NULL      = 22,
+    CBOR_UNEDFINED = 23
+    /* 24-31 Reserved */
+    /* 32-225 Unassigned */
+} CBORSimpleValue;
 
 /*
  * CBOR TAG Definitions
