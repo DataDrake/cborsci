@@ -27,7 +27,7 @@ of developers everywhere.
 ### GNU LESSER GENERAL PUBLIC LICENSE v2.1
 
 cborsci - CBOR Stream C Interpreter  
-Copyright (C) 2016 Bryan T. Meyers
+Copyright 2017 Bryan T. Meyers
 
 This library is free software; you can redistribute it and/or
 modify it under the terms of the GNU Lesser General Public
